@@ -1,3 +1,6 @@
+> This is a direct clone from the link below. All I did was use sphinx
+> to add the documentation so that I could more easiliy read it.
+
 <img src="./docs/images/logo.png" height="250" alt="robopy logo">
 
 [![Build Status](https://travis-ci.org/adityadua24/robopy.svg?branch=master)](https://travis-ci.org/adityadua24/robopy)
