@@ -1,0 +1,2009 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>robopy.base package &#8212; RoboPy 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="robopy.tests package" href="robopy.tests.html" />
+    <link rel="prev" title="robopy package" href="robopy.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="robopy-base-package">
+<h1>robopy.base package<a class="headerlink" href="#robopy-base-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-robopy.base.check_args">
+<span id="robopy-base-check-args-module"></span><h2>robopy.base.check_args module<a class="headerlink" href="#module-robopy.base.check_args" title="Permalink to this headline">¶</a></h2>
+<p>test_args module contains test for input arguments.
+It checks if input argument passed by user is valid or not.
+If any invalid data is found,
+the called function in test_args returns false</p>
+<dl class="function">
+<dt id="robopy.base.check_args.is_mat_list">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">is_mat_list</code><span class="sig-paren">(</span><em class="sig-param">list_matrices</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.is_mat_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>is_mat_list checks(arg1) checks if arg1
+is a list containing numpy matrix data type elements or not.
+If not, False is returned.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.is_vector">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">is_vector</code><span class="sig-paren">(</span><em class="sig-param">item</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.is_vector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.np2vtk">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">np2vtk</code><span class="sig-paren">(</span><em class="sig-param">mat</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.np2vtk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.rpy2r">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">rpy2r</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">order</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.rpy2r" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.se2_constructor_args_check">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">se2_constructor_args_check</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">y</em>, <em class="sig-param">rot</em>, <em class="sig-param">theta</em>, <em class="sig-param">so2</em>, <em class="sig-param">se2</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.se2_constructor_args_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.se2_valid">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">se2_valid</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.se2_valid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.so2_angle_list_check">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">so2_angle_list_check</code><span class="sig-paren">(</span><em class="sig-param">ang_list</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.so2_angle_list_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.so2_input_matrix">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">so2_input_matrix</code><span class="sig-paren">(</span><em class="sig-param">args_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.so2_input_matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.so2_input_types_check">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">so2_input_types_check</code><span class="sig-paren">(</span><em class="sig-param">args_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.so2_input_types_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.so2_interp_check">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">so2_interp_check</code><span class="sig-paren">(</span><em class="sig-param">obj1</em>, <em class="sig-param">obj2</em>, <em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.so2_interp_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.so2_valid">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">so2_valid</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.so2_valid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.so3_constructor_args_check">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">so3_constructor_args_check</code><span class="sig-paren">(</span><em class="sig-param">args_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.so3_constructor_args_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.super_pose_add_sub_check">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">super_pose_add_sub_check</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.super_pose_add_sub_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.super_pose_appenditem">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">super_pose_appenditem</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">item</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.super_pose_appenditem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.super_pose_divide_check">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">super_pose_divide_check</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.super_pose_divide_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.super_pose_multiply_check">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">super_pose_multiply_check</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.super_pose_multiply_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.super_pose_subclass_check">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">super_pose_subclass_check</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.super_pose_subclass_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.tr2angvec">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">tr2angvec</code><span class="sig-paren">(</span><em class="sig-param">tr</em>, <em class="sig-param">unit</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.tr2angvec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.tr2eul">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">tr2eul</code><span class="sig-paren">(</span><em class="sig-param">tr</em>, <em class="sig-param">unit</em>, <em class="sig-param">flip</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.tr2eul" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.tr2rpy">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">tr2rpy</code><span class="sig-paren">(</span><em class="sig-param">tr</em>, <em class="sig-param">unit</em>, <em class="sig-param">order</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.tr2rpy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.unit_check">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">unit_check</code><span class="sig-paren">(</span><em class="sig-param">unit</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.unit_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.check_args.valid_pose">
+<code class="sig-prename descclassname">robopy.base.check_args.</code><code class="sig-name descname">valid_pose</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.check_args.valid_pose" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-robopy.base.common">
+<span id="robopy-base-common-module"></span><h2>robopy.base.common module<a class="headerlink" href="#module-robopy.base.common" title="Permalink to this headline">¶</a></h2>
+<p>Common Module contains code shared by robotics and machine vision toolboxes</p>
+<dl class="function">
+<dt id="robopy.base.common.ishomog">
+<code class="sig-prename descclassname">robopy.base.common.</code><code class="sig-name descname">ishomog</code><span class="sig-paren">(</span><em class="sig-param">tr</em>, <em class="sig-param">dim</em>, <em class="sig-param">rtest=''</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.common.ishomog" title="Permalink to this definition">¶</a></dt>
+<dd><p>ISHOMOG Test if SE(3) homogeneous transformation matrix.
+ISHOMOG(T) is true if the argument T is of dimension 4x4 or 4x4xN, else false.
+ISHOMOG(T, ‘valid’) as above, but also checks the validity of the rotation sub-matrix.
+See Also: isrot, ishomog2, isvec</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.common.isrot">
+<code class="sig-prename descclassname">robopy.base.common.</code><code class="sig-name descname">isrot</code><span class="sig-paren">(</span><em class="sig-param">rot</em>, <em class="sig-param">dtest=False</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.common.isrot" title="Permalink to this definition">¶</a></dt>
+<dd><p>ISROT Test if SO(2) or SO(3) rotation matrix
+ISROT(rot) is true if the argument if of dimension 2x2, 2x2xN, 3x3, or 3x3xN, else false (0).
+ISROT(rot, ‘valid’) as above, but also checks the validity of the rotation.
+See also  ISHOMOG, ISROT2, ISVEC.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.common.isrot2">
+<code class="sig-prename descclassname">robopy.base.common.</code><code class="sig-name descname">isrot2</code><span class="sig-paren">(</span><em class="sig-param">rot</em>, <em class="sig-param">dtest=False</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.common.isrot2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.common.isvec">
+<code class="sig-prename descclassname">robopy.base.common.</code><code class="sig-name descname">isvec</code><span class="sig-paren">(</span><em class="sig-param">v</em>, <em class="sig-param">l=3</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.common.isvec" title="Permalink to this definition">¶</a></dt>
+<dd><p>ISVEC Test if vector</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-robopy.base.graphics">
+<span id="robopy-base-graphics-module"></span><h2>robopy.base.graphics module<a class="headerlink" href="#module-robopy.base.graphics" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="robopy.base.graphics.VtkPipeline">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.graphics.</code><code class="sig-name descname">VtkPipeline</code><span class="sig-paren">(</span><em class="sig-param">background=(0.15</em>, <em class="sig-param">0.15</em>, <em class="sig-param">0.15)</em>, <em class="sig-param">total_time_steps=None</em>, <em class="sig-param">timer_rate=60</em>, <em class="sig-param">gif_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.VtkPipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="robopy.base.graphics.VtkPipeline.add_actor">
+<code class="sig-name descname">add_actor</code><span class="sig-paren">(</span><em class="sig-param">actor</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.VtkPipeline.add_actor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.graphics.VtkPipeline.animate">
+<code class="sig-name descname">animate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.VtkPipeline.animate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.graphics.VtkPipeline.render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><em class="sig-param">ui=True</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.VtkPipeline.render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.graphics.VtkPipeline.screenshot">
+<code class="sig-name descname">screenshot</code><span class="sig-paren">(</span><em class="sig-param">filename=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.VtkPipeline.screenshot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.graphics.VtkPipeline.set_camera">
+<code class="sig-name descname">set_camera</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.VtkPipeline.set_camera" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.graphics.VtkPipeline.timer_tick">
+<code class="sig-name descname">timer_tick</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.VtkPipeline.timer_tick" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.graphics.axesActor2d">
+<code class="sig-prename descclassname">robopy.base.graphics.</code><code class="sig-name descname">axesActor2d</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.axesActor2d" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.graphics.axesCube">
+<code class="sig-prename descclassname">robopy.base.graphics.</code><code class="sig-name descname">axesCube</code><span class="sig-paren">(</span><em class="sig-param">ren</em>, <em class="sig-param">x_bound=matrix([[-1.5</em>, <em class="sig-param">1.5]])</em>, <em class="sig-param">y_bound=matrix([[-1.5</em>, <em class="sig-param">1.5]])</em>, <em class="sig-param">z_bound=matrix([[-1.5</em>, <em class="sig-param">1.5]])</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.axesCube" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.graphics.axesCubeFloor">
+<code class="sig-prename descclassname">robopy.base.graphics.</code><code class="sig-name descname">axesCubeFloor</code><span class="sig-paren">(</span><em class="sig-param">ren</em>, <em class="sig-param">x_bound=matrix([[-1.5</em>, <em class="sig-param">1.5]])</em>, <em class="sig-param">y_bound=matrix([[-1.5</em>, <em class="sig-param">1.5]])</em>, <em class="sig-param">z_bound=matrix([[-1.5</em>, <em class="sig-param">1.5]])</em>, <em class="sig-param">position=matrix([[ 0.</em>, <em class="sig-param">-1.5</em>, <em class="sig-param">0. ]])</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.axesCubeFloor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.graphics.axesUniversal">
+<code class="sig-prename descclassname">robopy.base.graphics.</code><code class="sig-name descname">axesUniversal</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.axesUniversal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.graphics.axes_x_y">
+<code class="sig-prename descclassname">robopy.base.graphics.</code><code class="sig-name descname">axes_x_y</code><span class="sig-paren">(</span><em class="sig-param">ren</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.axes_x_y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.graphics.floor">
+<code class="sig-prename descclassname">robopy.base.graphics.</code><code class="sig-name descname">floor</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.floor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.graphics.vtk_named_colors">
+<code class="sig-prename descclassname">robopy.base.graphics.</code><code class="sig-name descname">vtk_named_colors</code><span class="sig-paren">(</span><em class="sig-param">colors</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.graphics.vtk_named_colors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of vtk colors
+:param colors: List of color names supported by vtk
+:return: A list of vtk colors</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-robopy.base.model">
+<span id="robopy-base-model-module"></span><h2>robopy.base.model module<a class="headerlink" href="#module-robopy.base.model" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="robopy.base.model.Orion5">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.model.</code><code class="sig-name descname">Orion5</code><span class="sig-paren">(</span><em class="sig-param">base=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.model.Orion5" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/robopy.base.html#robopy.base.serial_link.SerialLink" title="robopy.base.serial_link.SerialLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">robopy.base.serial_link.SerialLink</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.base.model.Puma560">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.model.</code><code class="sig-name descname">Puma560</code><span class="sig-paren">(</span><em class="sig-param">base=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.model.Puma560" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/robopy.base.html#robopy.base.serial_link.SerialLink" title="robopy.base.serial_link.SerialLink"><code class="xref py py-class docutils literal notranslate"><span class="pre">robopy.base.serial_link.SerialLink</span></code></a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-robopy.base.pose">
+<span id="robopy-base-pose-module"></span><h2>robopy.base.pose module<a class="headerlink" href="#module-robopy.base.pose" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="robopy.base.pose.SE2">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.pose.</code><code class="sig-name descname">SE2</code><span class="sig-paren">(</span><em class="sig-param">theta=None</em>, <em class="sig-param">unit='rad'</em>, <em class="sig-param">x=None</em>, <em class="sig-param">y=None</em>, <em class="sig-param">rot=None</em>, <em class="sig-param">so2=None</em>, <em class="sig-param">se2=None</em>, <em class="sig-param">null=False</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/robopy.base.html#robopy.base.pose.SO2" title="robopy.base.pose.SO2"><code class="xref py py-class docutils literal notranslate"><span class="pre">robopy.base.pose.SO2</span></code></a></p>
+<dl class="method">
+<dt id="robopy.base.pose.SE2.SE3">
+<code class="sig-name descname">SE3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE2.SE3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE2.inv">
+<code class="sig-name descname">inv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE2.inv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an inverse SE2 object of same length</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE2.is_valid">
+<em class="property">static </em><code class="sig-name descname">is_valid</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE2.is_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if a np.matrix is a valid SO2 pose.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE2.log">
+<code class="sig-name descname">log</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE2.log" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE2.rand">
+<em class="property">classmethod </em><code class="sig-name descname">rand</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE2.rand" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE2.t_matrix">
+<code class="sig-name descname">t_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE2.t_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns list of translation matrices of SE2 object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE2.transl">
+<em class="property">property </em><code class="sig-name descname">transl</code><a class="headerlink" href="#robopy.base.pose.SE2.transl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE2.transl_vec">
+<em class="property">property </em><code class="sig-name descname">transl_vec</code><a class="headerlink" href="#robopy.base.pose.SE2.transl_vec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns list of translation vectors of SE2 object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE2.xyt">
+<code class="sig-name descname">xyt</code><span class="sig-paren">(</span><em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE2.xyt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return list of 3x1 dimension vectors containing x, y translation components and theta</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.base.pose.SE3">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.pose.</code><code class="sig-name descname">SE3</code><span class="sig-paren">(</span><em class="sig-param">x=None</em>, <em class="sig-param">y=None</em>, <em class="sig-param">z=None</em>, <em class="sig-param">rot=None</em>, <em class="sig-param">so3=None</em>, <em class="sig-param">se3=None</em>, <em class="sig-param">null=False</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/robopy.base.html#robopy.base.pose.SO3" title="robopy.base.pose.SO3"><code class="xref py py-class docutils literal notranslate"><span class="pre">robopy.base.pose.SO3</span></code></a></p>
+<dl class="method">
+<dt id="robopy.base.pose.SE3.Rx">
+<em class="property">classmethod </em><code class="sig-name descname">Rx</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em>, <em class="sig-param">x=None</em>, <em class="sig-param">y=None</em>, <em class="sig-param">z=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE3.Rx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE3.Ry">
+<em class="property">classmethod </em><code class="sig-name descname">Ry</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em>, <em class="sig-param">x=None</em>, <em class="sig-param">y=None</em>, <em class="sig-param">z=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE3.Ry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE3.Rz">
+<em class="property">classmethod </em><code class="sig-name descname">Rz</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em>, <em class="sig-param">x=None</em>, <em class="sig-param">y=None</em>, <em class="sig-param">z=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE3.Rz" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE3.form_trans_matrix">
+<em class="property">static </em><code class="sig-name descname">form_trans_matrix</code><span class="sig-paren">(</span><em class="sig-param">rot</em>, <em class="sig-param">transl</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE3.form_trans_matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE3.np">
+<em class="property">classmethod </em><code class="sig-name descname">np</code><span class="sig-paren">(</span><em class="sig-param">arg_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE3.np" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE3.rand">
+<em class="property">classmethod </em><code class="sig-name descname">rand</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE3.rand" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE3.se3">
+<em class="property">classmethod </em><code class="sig-name descname">se3</code><span class="sig-paren">(</span><em class="sig-param">args_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SE3.se3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SE3.transl">
+<em class="property">property </em><code class="sig-name descname">transl</code><a class="headerlink" href="#robopy.base.pose.SE3.transl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.base.pose.SO2">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.pose.</code><code class="sig-name descname">SO2</code><span class="sig-paren">(</span><em class="sig-param">args_in=None</em>, <em class="sig-param">unit='rad'</em>, <em class="sig-param">null=False</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/robopy.base.html#robopy.base.super_pose.SuperPose" title="robopy.base.super_pose.SuperPose"><code class="xref py py-class docutils literal notranslate"><span class="pre">robopy.base.super_pose.SuperPose</span></code></a></p>
+<dl class="method">
+<dt id="robopy.base.pose.SO2.SE2">
+<code class="sig-name descname">SE2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.SE2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns SE2 object with same rotational component as SO2 and a zero translation component</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.angle">
+<em class="property">property </em><code class="sig-name descname">angle</code><a class="headerlink" href="#robopy.base.pose.SO2.angle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns angle of SO2 object matrices in unit radians</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.check">
+<em class="property">static </em><code class="sig-name descname">check</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.det">
+<em class="property">property </em><code class="sig-name descname">det</code><a class="headerlink" href="#robopy.base.pose.SO2.det" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list containing determinants of all matrices in a SO2 object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.eig">
+<code class="sig-name descname">eig</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.eig" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.exp">
+<em class="property">static </em><code class="sig-name descname">exp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.exp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.form_trans_matrix">
+<em class="property">static </em><code class="sig-name descname">form_trans_matrix</code><span class="sig-paren">(</span><em class="sig-param">rot</em>, <em class="sig-param">transl</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.form_trans_matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.interp">
+<code class="sig-name descname">interp</code><span class="sig-paren">(</span><em class="sig-param">other</em>, <em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.interp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the interpolated SO2 object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.inv">
+<code class="sig-name descname">inv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.inv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns inverse SO2 object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.is_valid">
+<em class="property">static </em><code class="sig-name descname">is_valid</code><span class="sig-paren">(</span><em class="sig-param">obj</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.is_valid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if a np.matrix is a valid SO2 pose.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.log">
+<code class="sig-name descname">log</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.log" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.new">
+<code class="sig-name descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.new" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a deep copy of SO2 object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.rand">
+<em class="property">classmethod </em><code class="sig-name descname">rand</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.rand" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.t_matrix">
+<code class="sig-name descname">t_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO2.t_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of transformation matrices</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO2.unit">
+<em class="property">property </em><code class="sig-name descname">unit</code><a class="headerlink" href="#robopy.base.pose.SO2.unit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.base.pose.SO3">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.pose.</code><code class="sig-name descname">SO3</code><span class="sig-paren">(</span><em class="sig-param">args_in=None</em>, <em class="sig-param">null=False</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/robopy.base.html#robopy.base.super_pose.SuperPose" title="robopy.base.super_pose.SuperPose"><code class="xref py py-class docutils literal notranslate"><span class="pre">robopy.base.super_pose.SuperPose</span></code></a></p>
+<dl class="method">
+<dt id="robopy.base.pose.SO3.Rx">
+<em class="property">classmethod </em><code class="sig-name descname">Rx</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.Rx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.Ry">
+<em class="property">classmethod </em><code class="sig-name descname">Ry</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.Ry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.Rz">
+<em class="property">classmethod </em><code class="sig-name descname">Rz</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.Rz" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.angvec">
+<code class="sig-name descname">angvec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.angvec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.animate">
+<code class="sig-name descname">animate</code><span class="sig-paren">(</span><em class="sig-param">other=None</em>, <em class="sig-param">duration=5</em>, <em class="sig-param">gif=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.animate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.approach_vec">
+<code class="sig-name descname">approach_vec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.approach_vec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.check">
+<em class="property">static </em><code class="sig-name descname">check</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.ctraj">
+<code class="sig-name descname">ctraj</code><span class="sig-paren">(</span><em class="sig-param">T1</em>, <em class="sig-param">N</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.ctraj" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.det">
+<code class="sig-name descname">det</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.det" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.eig">
+<code class="sig-name descname">eig</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.eig" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.eul">
+<em class="property">classmethod </em><code class="sig-name descname">eul</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.eul" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.exp">
+<code class="sig-name descname">exp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.exp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.interp">
+<code class="sig-name descname">interp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.interp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.inv">
+<code class="sig-name descname">inv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.inv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.log">
+<code class="sig-name descname">log</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.log" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.new">
+<code class="sig-name descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.new" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.norm_vec">
+<code class="sig-name descname">norm_vec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.norm_vec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.np">
+<em class="property">classmethod </em><code class="sig-name descname">np</code><span class="sig-paren">(</span><em class="sig-param">args_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.np" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.oa">
+<em class="property">classmethod </em><code class="sig-name descname">oa</code><span class="sig-paren">(</span><em class="sig-param">o</em>, <em class="sig-param">a</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.oa" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.orient_vec">
+<code class="sig-name descname">orient_vec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.orient_vec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.rand">
+<em class="property">classmethod </em><code class="sig-name descname">rand</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.rand" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.rotation">
+<code class="sig-name descname">rotation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.rotation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.rpy">
+<em class="property">classmethod </em><code class="sig-name descname">rpy</code><span class="sig-paren">(</span><em class="sig-param">thetas</em>, <em class="sig-param">order='zyx'</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.rpy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.se3">
+<em class="property">classmethod </em><code class="sig-name descname">se3</code><span class="sig-paren">(</span><em class="sig-param">args_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.se3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.so3">
+<em class="property">classmethod </em><code class="sig-name descname">so3</code><span class="sig-paren">(</span><em class="sig-param">args_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.so3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.t_matrix">
+<code class="sig-name descname">t_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.t_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns transformation matrices associated with the pose object.
+Return data type is list or np.matrix depending on number of transformation matrices present.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.to_se3">
+<code class="sig-name descname">to_se3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.to_se3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.toangvec">
+<code class="sig-name descname">toangvec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.toangvec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.toeul">
+<code class="sig-name descname">toeul</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.toeul" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.torpy">
+<code class="sig-name descname">torpy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.torpy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.pose.SO3.trnorm">
+<code class="sig-name descname">trnorm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.pose.SO3.trnorm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-robopy.base.quaternion">
+<span id="robopy-base-quaternion-module"></span><h2>robopy.base.quaternion module<a class="headerlink" href="#module-robopy.base.quaternion" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="robopy.base.quaternion.Quaternion">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.quaternion.</code><code class="sig-name descname">Quaternion</code><span class="sig-paren">(</span><em class="sig-param">s=None</em>, <em class="sig-param">v=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.Quaternion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="robopy.base.quaternion.Quaternion.conj">
+<code class="sig-name descname">conj</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.Quaternion.conj" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.Quaternion.double">
+<code class="sig-name descname">double</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.Quaternion.double" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the quaternion as 4-element vector.
+Code retrieved from: <a class="reference external" href="https://github.com/petercorke/robotics-toolbox-python/blob/master/robot/Quaternion.py">https://github.com/petercorke/robotics-toolbox-python/blob/master/robot/Quaternion.py</a>
+Original authors: Luis Fernando Lara Tobar and Peter Corke
+&#64;rtype: 4-vector
+&#64;return: the quaternion elements</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.Quaternion.inv">
+<code class="sig-name descname">inv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.Quaternion.inv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.Quaternion.matrix">
+<code class="sig-name descname">matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.Quaternion.matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.Quaternion.norm">
+<code class="sig-name descname">norm</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.Quaternion.norm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the norm of this quaternion.
+Code retrieved from: <a class="reference external" href="https://github.com/petercorke/robotics-toolbox-python/blob/master/robot/Quaternion.py">https://github.com/petercorke/robotics-toolbox-python/blob/master/robot/Quaternion.py</a>
+Original authors: Luis Fernando Lara Tobar and Peter Corke
+&#64;rtype: number
+&#64;return: the norm</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.Quaternion.pure">
+<em class="property">classmethod </em><code class="sig-name descname">pure</code><span class="sig-paren">(</span><em class="sig-param">vec</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.Quaternion.pure" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.Quaternion.qt">
+<em class="property">classmethod </em><code class="sig-name descname">qt</code><span class="sig-paren">(</span><em class="sig-param">arg_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.Quaternion.qt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.Quaternion.r">
+<code class="sig-name descname">r</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.Quaternion.r" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an equivalent rotation matrix.
+Code retrieved from: <a class="reference external" href="https://github.com/petercorke/robotics-toolbox-python/blob/master/robot/Quaternion.py">https://github.com/petercorke/robotics-toolbox-python/blob/master/robot/Quaternion.py</a>
+Original authors: Luis Fernando Lara Tobar and Peter Corke
+&#64;rtype: 3x3 orthonormal rotation matrix
+&#64;return: equivalent rotation matrix</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.Quaternion.tr">
+<code class="sig-name descname">tr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.Quaternion.tr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.Quaternion.unit">
+<code class="sig-name descname">unit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.Quaternion.unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return an equivalent unit quaternion
+Code retrieved from: <a class="reference external" href="https://github.com/petercorke/robotics-toolbox-python/blob/master/robot/Quaternion.py">https://github.com/petercorke/robotics-toolbox-python/blob/master/robot/Quaternion.py</a>
+Original authors: Luis Fernando Lara Tobar and Peter Corke
+&#64;rtype: quaternion
+&#64;return: equivalent unit quaternion</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.base.quaternion.UnitQuaternion">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.quaternion.</code><code class="sig-name descname">UnitQuaternion</code><span class="sig-paren">(</span><em class="sig-param">s=None</em>, <em class="sig-param">v=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/robopy.base.html#robopy.base.quaternion.Quaternion" title="robopy.base.quaternion.Quaternion"><code class="xref py py-class docutils literal notranslate"><span class="pre">robopy.base.quaternion.Quaternion</span></code></a></p>
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.Rx">
+<em class="property">classmethod </em><code class="sig-name descname">Rx</code><span class="sig-paren">(</span><em class="sig-param">angle</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.Rx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.Ry">
+<em class="property">classmethod </em><code class="sig-name descname">Ry</code><span class="sig-paren">(</span><em class="sig-param">angle</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.Ry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.Rz">
+<em class="property">classmethod </em><code class="sig-name descname">Rz</code><span class="sig-paren">(</span><em class="sig-param">angle</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.Rz" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.angvec">
+<em class="property">classmethod </em><code class="sig-name descname">angvec</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">v</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.angvec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.animate">
+<code class="sig-name descname">animate</code><span class="sig-paren">(</span><em class="sig-param">qr=None</em>, <em class="sig-param">duration=5</em>, <em class="sig-param">gif=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.animate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.dot">
+<code class="sig-name descname">dot</code><span class="sig-paren">(</span><em class="sig-param">omega</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.dot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.dotb">
+<code class="sig-name descname">dotb</code><span class="sig-paren">(</span><em class="sig-param">omega</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.dotb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.eul">
+<em class="property">classmethod </em><code class="sig-name descname">eul</code><span class="sig-paren">(</span><em class="sig-param">arg_in</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.eul" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.interp">
+<code class="sig-name descname">interp</code><span class="sig-paren">(</span><em class="sig-param">qr</em>, <em class="sig-param">r=0.5</em>, <em class="sig-param">shortest=False</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.interp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Algorithm source: <a class="reference external" href="https://en.wikipedia.org/wiki/Slerp">https://en.wikipedia.org/wiki/Slerp</a>
+:param qr: UnitQuaternion
+:param shortest: Take the shortest path along the great circle
+:param r: interpolation point
+:return: interpolated UnitQuaternion</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.matrix">
+<code class="sig-name descname">matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.new">
+<code class="sig-name descname">new</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.new" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.omega">
+<em class="property">classmethod </em><code class="sig-name descname">omega</code><span class="sig-paren">(</span><em class="sig-param">w</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.omega" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.q2r">
+<code class="sig-name descname">q2r</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.q2r" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.q2tr">
+<code class="sig-name descname">q2tr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.q2tr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.qt">
+<em class="property">classmethod </em><code class="sig-name descname">qt</code><span class="sig-paren">(</span><em class="sig-param">arg_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.qt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.rot">
+<em class="property">classmethod </em><code class="sig-name descname">rot</code><span class="sig-paren">(</span><em class="sig-param">arg_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.rot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.rpy">
+<em class="property">classmethod </em><code class="sig-name descname">rpy</code><span class="sig-paren">(</span><em class="sig-param">arg_in</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.rpy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.to_angvec">
+<code class="sig-name descname">to_angvec</code><span class="sig-paren">(</span><em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.to_angvec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.to_rot">
+<code class="sig-name descname">to_rot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.to_rot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.to_rpy">
+<code class="sig-name descname">to_rpy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.to_rpy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.to_se3">
+<code class="sig-name descname">to_se3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.to_se3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.to_so3">
+<code class="sig-name descname">to_so3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.to_so3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.to_vec">
+<code class="sig-name descname">to_vec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.to_vec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.tr2q">
+<em class="property">static </em><code class="sig-name descname">tr2q</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.tr2q" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a homogeneous rotation matrix to a Quaternion object
+Code retrieved from: <a class="reference external" href="https://github.com/petercorke/robotics-toolbox-python/blob/master/robot/Quaternion.py">https://github.com/petercorke/robotics-toolbox-python/blob/master/robot/Quaternion.py</a>
+Original authors: Luis Fernando Lara Tobar and Peter Corke
+:param t: homogeneous matrix
+:return: quaternion object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.quaternion.UnitQuaternion.vec">
+<em class="property">classmethod </em><code class="sig-name descname">vec</code><span class="sig-paren">(</span><em class="sig-param">arg_in</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.quaternion.UnitQuaternion.vec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-robopy.base.serial_link">
+<span id="robopy-base-serial-link-module"></span><h2>robopy.base.serial_link module<a class="headerlink" href="#module-robopy.base.serial_link" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="robopy.base.serial_link.Link">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.serial_link.</code><code class="sig-name descname">Link</code><span class="sig-paren">(</span><em class="sig-param">j</em>, <em class="sig-param">theta</em>, <em class="sig-param">d</em>, <em class="sig-param">a</em>, <em class="sig-param">alpha</em>, <em class="sig-param">offset=None</em>, <em class="sig-param">kind=''</em>, <em class="sig-param">mdh=0</em>, <em class="sig-param">flip=None</em>, <em class="sig-param">qlim=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.serial_link.Link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<p>Link object class.</p>
+<dl class="method">
+<dt id="robopy.base.serial_link.Link.A">
+<code class="sig-name descname">A</code><span class="sig-paren">(</span><em class="sig-param">q</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.serial_link.Link.A" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.base.serial_link.Prismatic">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.serial_link.</code><code class="sig-name descname">Prismatic</code><span class="sig-paren">(</span><em class="sig-param">j</em>, <em class="sig-param">theta</em>, <em class="sig-param">d</em>, <em class="sig-param">a</em>, <em class="sig-param">alpha</em>, <em class="sig-param">offset</em>, <em class="sig-param">qlim</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.serial_link.Prismatic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/robopy.base.html#robopy.base.serial_link.Link" title="robopy.base.serial_link.Link"><code class="xref py py-class docutils literal notranslate"><span class="pre">robopy.base.serial_link.Link</span></code></a></p>
+<p>Prismatic object class.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.base.serial_link.Revolute">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.serial_link.</code><code class="sig-name descname">Revolute</code><span class="sig-paren">(</span><em class="sig-param">j</em>, <em class="sig-param">theta</em>, <em class="sig-param">d</em>, <em class="sig-param">a</em>, <em class="sig-param">alpha</em>, <em class="sig-param">offset</em>, <em class="sig-param">qlim</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.serial_link.Revolute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="source/robopy.base.html#robopy.base.serial_link.Link" title="robopy.base.serial_link.Link"><code class="xref py py-class docutils literal notranslate"><span class="pre">robopy.base.serial_link.Link</span></code></a></p>
+<p>Revolute object class.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.base.serial_link.SerialLink">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.serial_link.</code><code class="sig-name descname">SerialLink</code><span class="sig-paren">(</span><em class="sig-param">links</em>, <em class="sig-param">name=None</em>, <em class="sig-param">base=None</em>, <em class="sig-param">tool=None</em>, <em class="sig-param">stl_files=None</em>, <em class="sig-param">q=None</em>, <em class="sig-param">colors=None</em>, <em class="sig-param">param=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.serial_link.SerialLink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>SerialLink object class.</p>
+<dl class="method">
+<dt id="robopy.base.serial_link.SerialLink.animate">
+<code class="sig-name descname">animate</code><span class="sig-paren">(</span><em class="sig-param">stances</em>, <em class="sig-param">unit='rad'</em>, <em class="sig-param">frame_rate=25</em>, <em class="sig-param">gif=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.serial_link.SerialLink.animate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Animates SerialLink object over nx6 dimensional input matrix, with each row representing list of 6 joint angles.
+:param stances: nx6 dimensional input matrix.
+:param unit: unit of input angles. Allowed values: ‘rad’ or ‘deg’
+:param frame_rate: frame_rate for animation. Could be any integer more than 1. Higher value runs through stances faster.
+:return: null</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.serial_link.SerialLink.fkine">
+<code class="sig-name descname">fkine</code><span class="sig-paren">(</span><em class="sig-param">stance</em>, <em class="sig-param">unit='rad'</em>, <em class="sig-param">apply_stance=False</em>, <em class="sig-param">actor_list=None</em>, <em class="sig-param">timer=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.serial_link.SerialLink.fkine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates forward kinematics for a list of joint angles.
+:param stance: stance is list of joint angles.
+:param unit: unit of input angles.
+:param apply_stance: If True, then applied tp actor_list.
+:param actor_list: Passed to apply transformations computed by fkine.
+:param timer: internal use only (for animation).
+:return: homogeneous transformation matrix.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.serial_link.SerialLink.ikine">
+<code class="sig-name descname">ikine</code><span class="sig-paren">(</span><em class="sig-param">T</em>, <em class="sig-param">q0=None</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.serial_link.SerialLink.ikine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates inverse kinematics for homogeneous transformation matrix using numerical optimisation method.
+:param T: homogeneous transformation matrix.
+:param q0: initial list of joint angles for optimisation.
+:param unit: preferred unit for returned joint angles. Allowed values: ‘rad’ or ‘deg’.
+:return: a list of 6 joint angles.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.serial_link.SerialLink.length">
+<em class="property">property </em><code class="sig-name descname">length</code><a class="headerlink" href="#robopy.base.serial_link.SerialLink.length" title="Permalink to this definition">¶</a></dt>
+<dd><p>length property
+:return: int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.serial_link.SerialLink.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><em class="sig-param">stance</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.serial_link.SerialLink.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots the SerialLink object in a desired stance.
+:param stance: list of joint angles for SerialLink object.
+:param unit: unit of input angles.
+:return: null.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-robopy.base.super_pose">
+<span id="robopy-base-super-pose-module"></span><h2>robopy.base.super_pose module<a class="headerlink" href="#module-robopy.base.super_pose" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="robopy.base.super_pose.SuperPose">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.base.super_pose.</code><code class="sig-name descname">SuperPose</code><a class="headerlink" href="#robopy.base.super_pose.SuperPose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.append">
+<code class="sig-name descname">append</code><span class="sig-paren">(</span><em class="sig-param">item</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.append" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.data">
+<em class="property">property </em><code class="sig-name descname">data</code><a class="headerlink" href="#robopy.base.super_pose.SuperPose.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Always returns a list containing the matrices of the pose object.
+:return: A list of matrices.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.dim">
+<em class="property">property </em><code class="sig-name descname">dim</code><a class="headerlink" href="#robopy.base.super_pose.SuperPose.dim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns dimensions of first matrix in pose object.
+Assumed that all matrices have same dimension.
+:return: tuple</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.isSE">
+<em class="property">property </em><code class="sig-name descname">isSE</code><a class="headerlink" href="#robopy.base.super_pose.SuperPose.isSE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if object is of type SE2 or SE3 or none of them.
+:return: bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.is_equal">
+<code class="sig-name descname">is_equal</code><span class="sig-paren">(</span><em class="sig-param">other</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.is_equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.ishomog">
+<code class="sig-name descname">ishomog</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.ishomog" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.ishomog2">
+<code class="sig-name descname">ishomog2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.ishomog2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.isrot">
+<code class="sig-name descname">isrot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.isrot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.isrot2">
+<code class="sig-name descname">isrot2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.isrot2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.length">
+<em class="property">property </em><code class="sig-name descname">length</code><a class="headerlink" href="#robopy.base.super_pose.SuperPose.length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Property to return number of matrices in pose object
+:return: int</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.mat">
+<em class="property">property </em><code class="sig-name descname">mat</code><a class="headerlink" href="#robopy.base.super_pose.SuperPose.mat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Property to return the matrices of pose object.
+:return: Returns np.matrix type if only one matrix is present. Else returns a list of np.matrix.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.render">
+<code class="sig-name descname">render</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.render" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.t_2_r">
+<code class="sig-name descname">t_2_r</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.t_2_r" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.tr_2_rt">
+<code class="sig-name descname">tr_2_rt</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.tr_2_rt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.tranimate">
+<code class="sig-name descname">tranimate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.tranimate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.trplot">
+<code class="sig-name descname">trplot</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.trplot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.trplot2">
+<code class="sig-name descname">trplot2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.trplot2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.base.super_pose.SuperPose.trprint">
+<code class="sig-name descname">trprint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.super_pose.SuperPose.trprint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-robopy.base.transforms">
+<span id="robopy-base-transforms-module"></span><h2>robopy.base.transforms module<a class="headerlink" href="#module-robopy.base.transforms" title="Permalink to this headline">¶</a></h2>
+<p>This file contains all of the transforms functions that will be used within the toolbox</p>
+<dl class="function">
+<dt id="robopy.base.transforms.angvec2r">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">angvec2r</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">v</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.angvec2r" title="Permalink to this definition">¶</a></dt>
+<dd><p>ANGVEC2R(THETA, V) is an orthonormal rotation matrix (3x3)
+equivalent to a rotation of THETA about the vector V.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>theta</strong> – rotation in radians</p></li>
+<li><p><strong>v</strong> – vector</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>rotation matrix</p>
+</dd>
+</dl>
+<p>Notes::
+- If THETA == 0 then return identity matrix.
+- If THETA ~= 0 then V must have a finite length.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.angvec2tr">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">angvec2tr</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">v</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.angvec2tr" title="Permalink to this definition">¶</a></dt>
+<dd><p>ANGVEC2TR(THETA, V) is a homogeneous transform matrix (4x4) equivalent to a
+rotation of THETA about the vector V.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>theta</strong> – rotation in radians</p></li>
+<li><p><strong>v</strong> – vector</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>homogenous transform matrix</p>
+</dd>
+</dl>
+<p>Notes::
+- The translational part is zero.
+- If THETA == 0 then return identity matrix.
+- If THETA ~= 0 then V must have a finite length.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.eul2r">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">eul2r</code><span class="sig-paren">(</span><em class="sig-param">phi</em>, <em class="sig-param">theta=None</em>, <em class="sig-param">psi=None</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.eul2r" title="Permalink to this definition">¶</a></dt>
+<dd><p>EUL2R Convert Euler angles to rotation matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>phi</strong> – x axis rotation</p></li>
+<li><p><strong>theta</strong> – y axis rotation</p></li>
+<li><p><strong>psi</strong> – z axis rotation</p></li>
+<li><p><strong>unit</strong> – ‘rad’ or ‘deg’ for angles</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>rotation matrix</p>
+</dd>
+</dl>
+<p>R = EUL2R(PHI, THETA, PSI, UNIT) is an SO(3) orthonornal rotation
+matrix (3x3) equivalent to the specified Euler angles.  These correspond
+to rotations about the Z, Y, Z axes respectively. If PHI, THETA, PSI are
+column vectors (Nx1) then they are assumed to represent a trajectory and
+R is a three-dimensional matrix (3x3xN), where the last index corresponds
+to rows of PHI, THETA, PSI.</p>
+<p>R = EUL2R(EUL, OPTIONS) as above but the Euler angles are taken from the
+vector (1x3)  EUL = [PHI THETA PSI]. If EUL is a matrix (Nx3) then R is a
+three-dimensional matrix (3x3xN), where the last index corresponds to
+rows of RPY which are assumed to be [PHI,THETA,PSI].</p>
+<p>Options::
+‘deg’      Angles given in degrees (radians default)</p>
+<p>Note::
+- The vectors PHI, THETA, PSI must be of the same length.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.eul2tr">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">eul2tr</code><span class="sig-paren">(</span><em class="sig-param">phi</em>, <em class="sig-param">theta=None</em>, <em class="sig-param">psi=None</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.eul2tr" title="Permalink to this definition">¶</a></dt>
+<dd><p>EUL2TR Convert Euler angles to homogeneous transform</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>phi</strong> – x axis rotation</p></li>
+<li><p><strong>theta</strong> – y axis rotation</p></li>
+<li><p><strong>psi</strong> – z axis rotation</p></li>
+<li><p><strong>unit</strong> – ‘rad’ or ‘deg’ for angles</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>rotation matrix</p>
+</dd>
+</dl>
+<p>T = EUL2TR(PHI, THETA, PSI, OPTIONS) is an SE(3) homogeneous
+transformation matrix (4x4) with zero translation and rotation equivalent
+to the specified Euler angles. These correspond to rotations about the Z,
+Y, Z axes respectively. If PHI, THETA, PSI are column vectors (Nx1) then
+they are assumed to represent a trajectory and R is a three-dimensional
+matrix (4x4xN), where the last index corresponds to rows of PHI, THETA,
+PSI.</p>
+<p>R = EUL2R(EUL, OPTIONS) as above but the Euler angles are taken from the
+vector (1x3)  EUL = [PHI THETA PSI]. If EUL is a matrix (Nx3) then R is a
+three-dimensional matrix (4x4xN), where the last index corresponds to
+rows of RPY which are assumed to be [PHI,THETA,PSI].</p>
+<p>Options::
+‘deg’      Angles given in degrees (radians default)</p>
+<p>Note::
+- The vectors PHI, THETA, PSI must be of the same length.
+- The translational part is zero.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.np2vtk">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">np2vtk</code><span class="sig-paren">(</span><em class="sig-param">mat</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.np2vtk" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.oa2r">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">oa2r</code><span class="sig-paren">(</span><em class="sig-param">o</em>, <em class="sig-param">a=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.oa2r" title="Permalink to this definition">¶</a></dt>
+<dd><p>OA2R Convert orientation and approach vectors to rotation matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>o</strong> – vector parallel to Y- axes</p></li>
+<li><p><strong>a</strong> – vector parallel to the z-axes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>rotation matrix</p>
+</dd>
+</dl>
+<p>R = OA2R(O, A) is an SO(3) rotation matrix (3x3) for the specified orientation
+and approach vectors (3x1) formed from 3 vectors such that R = [N O A] and N = O x A.</p>
+<p>Notes::
+- The matrix is guaranteed to be orthonormal so long as O and A are not parallel.
+- The vectors O and A are parallel to the Y- and Z-axes of the coordinate frame.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.oa2tr">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">oa2tr</code><span class="sig-paren">(</span><em class="sig-param">o</em>, <em class="sig-param">a=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.oa2tr" title="Permalink to this definition">¶</a></dt>
+<dd><p>OA2TR Convert orientation and approach vectors to homogeneous transformation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>o</strong> – vector parallel to Y- axes</p></li>
+<li><p><strong>a</strong> – vector parallel to the z-axes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>homogeneous transform</p>
+</dd>
+</dl>
+<p>T = OA2TR(O, A) is an SE(3) homogeneous tranformation (4x4) for the
+specified orientation and approach vectors (3x1) formed from 3 vectors
+such that R = [N O A] and N = O x A.</p>
+<p>Notes::
+- The rotation submatrix is guaranteed to be orthonormal so long as O and A
+are not parallel.
+- The translational part is zero.
+- The vectors O and A are parallel to the Y- and Z-axes of the coordinate frame.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.r2t">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">r2t</code><span class="sig-paren">(</span><em class="sig-param">rmat</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.r2t" title="Permalink to this definition">¶</a></dt>
+<dd><p>R2T Convert rotation matrix to a homogeneous transform</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>rmat</strong> – rotation matrix</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>homogeneous transformation</p>
+</dd>
+</dl>
+<p>R2T(rmat) is an SE(2) or SE(3) homogeneous transform equivalent to an
+SO(2) or SO(3) orthonormal rotation matrix rmat with a zero translational
+component. Works for T in either SE(2) or SE(3):
+if rmat is 2x2 then return is 3x3, or
+if rmat is 3x3 then return is 4x4.</p>
+<p>Translational component is zero.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.rot2">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">rot2</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.rot2" title="Permalink to this definition">¶</a></dt>
+<dd><p>ROT2 SO(2) Rotational Matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>theta</strong> – rotation in radians or degrees</p></li>
+<li><p><strong>unit</strong> – “rad” or “deg” to indicate unit being used</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>rotational matrix (2x2)</p>
+</dd>
+</dl>
+<p>ROT2(THETA) is an SO(2) rotation matrix (2x2) representing a rotation of THETA radians.
+ROT2(THETA, ‘deg’) as above but THETA is in degrees.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.rotx">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">rotx</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.rotx" title="Permalink to this definition">¶</a></dt>
+<dd><p>ROTX gives rotation about X axis</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>theta</strong> – angle for rotation matrix</p></li>
+<li><p><strong>unit</strong> – unit of input passed. ‘rad’ or ‘deg’</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>rotation matrix</p>
+</dd>
+</dl>
+<p>rotx(THETA) is an SO(3) rotation matrix (3x3) representing a rotation
+of THETA radians about the x-axis
+rotx(THETA, “deg”) as above but THETA is in degrees</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.roty">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">roty</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.roty" title="Permalink to this definition">¶</a></dt>
+<dd><p>ROTY Rotation about Y axis</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>theta</strong> – angle for rotation matrix</p></li>
+<li><p><strong>unit</strong> – unit of input passed. ‘rad’ or ‘deg’</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>rotation matrix</p>
+</dd>
+</dl>
+<p>roty(THETA) is an SO(3) rotation matrix (3x3) representing a rotation
+of THETA radians about the y-axis
+roty(THETA, “deg”) as above but THETA is in degrees</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.rotz">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">rotz</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.rotz" title="Permalink to this definition">¶</a></dt>
+<dd><p>ROTZ Rotation about Z axis</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>theta</strong> – angle for rotation matrix</p></li>
+<li><p><strong>unit</strong> – unit of input passed. ‘rad’ or ‘deg’</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>rotation matrix</p>
+</dd>
+</dl>
+<p>rotz(THETA) is an SO(3) rotation matrix (3x3) representing a rotation
+of THETA radians about the z-axis
+rotz(THETA, “deg”) as above but THETA is in degrees</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.rpy2r">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">rpy2r</code><span class="sig-paren">(</span><em class="sig-param">thetas</em>, <em class="sig-param">order='zyx'</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.rpy2r" title="Permalink to this definition">¶</a></dt>
+<dd><p>RPY2R Roll-pitch-yaw angles to rotation matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>thetas</strong> – list of angles</p></li>
+<li><p><strong>order</strong> – ‘xyz’, ‘zyx’ or ‘yxz’</p></li>
+<li><p><strong>unit</strong> – ‘rad’ or ‘deg’</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>rotation matrix</p>
+</dd>
+</dl>
+<p>RPY2R(ROLL, PITCH, YAW, OPTIONS) is an SO(3) orthonormal rotation matrix
+(3x3) equivalent to the specified roll, pitch, yaw angles angles.
+These correspond to rotations about the Z, Y, X axes respectively. If ROLL,
+PITCH, YAW are column vectors (Nx1) then they are assumed to represent a
+trajectory and R is a three-dimensional matrix (3x3xN), where the last index
+corresponds to rows of ROLL, PITCH, YAW.</p>
+<p>R = RPY2R(RPY, OPTIONS) as above but the roll, pitch, yaw angles are taken
+from the vector (1x3) RPY=[ROLL,PITCH,YAW]. If RPY is a matrix(Nx3) then R
+is a three-dimensional matrix (3x3xN), where the last index corresponds to
+rows of RPY which are assumed to be [ROLL,PITCH,YAW].</p>
+<dl class="simple">
+<dt>Options::</dt><dd><p>‘deg’   Compute angles in degrees (radians default)
+‘xyz’   Rotations about X, Y, Z axes (for a robot gripper)
+‘yxz’   Rotations about Y, X, Z axes (for a camera)</p>
+</dd>
+</dl>
+<p>Note::
+- Toolbox rel 8-9 has the reverse angle sequence as default.
+- ZYX order is appropriate for vehicles with direction of travel in the X
+direction.  XYZ order is appropriate if direction of travel is in the Z direction.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.rpy2tr">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">rpy2tr</code><span class="sig-paren">(</span><em class="sig-param">thetas</em>, <em class="sig-param">order='zyx'</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.rpy2tr" title="Permalink to this definition">¶</a></dt>
+<dd><p>RPY2TR Roll-pitch-yaw angles to homogeneous transform</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>thetas</strong> – list of angles</p></li>
+<li><p><strong>order</strong> – order can be ‘xyz’/’arm’, ‘zyx’/’vehicle’, ‘yxz’/’camera’</p></li>
+<li><p><strong>unit</strong> – unit of input angles</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>homogeneous transformation matrix</p>
+</dd>
+</dl>
+<p>T = RPY2TR(ROLL, PITCH, YAW, OPTIONS) is an SE(3) homogeneous
+transformation matrix (4x4) with zero translation and rotation equivalent
+to the specified roll, pitch, yaw angles angles. These correspond to
+rotations about the Z, Y, X axes respectively. If ROLL, PITCH, YAW are
+column vectors (Nx1) then they are assumed to represent a trajectory and
+R is a three-dimensional matrix (4x4xN), where the last index corresponds
+to rows of ROLL, PITCH, YAW.</p>
+<p>T = RPY2TR(RPY, OPTIONS) as above but the roll, pitch, yaw angles are
+taken from the vector (1x3) RPY=[ROLL,PITCH,YAW]. If RPY is a matrix
+(Nx3) then R is a three-dimensional matrix (4x4xN), where the last index
+corresponds to rows of RPY which are assumed to be
+ROLL,PITCH,YAW].</p>
+<dl class="simple">
+<dt>Options::</dt><dd><p>‘deg’   Compute angles in degrees (radians default)
+‘xyz’   Rotations about X, Y, Z axes (for a robot gripper)
+‘yxz’   Rotations about Y, X, Z axes (for a camera)</p>
+</dd>
+</dl>
+<p>Note::
+- Toolbox rel 8-9 has the reverse angle sequence as default.
+- ZYX order is appropriate for vehicles with direction of travel in the X
+direction.  XYZ order is appropriate if direction of travel is in the Z
+direction.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.rt2tr">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">rt2tr</code><span class="sig-paren">(</span><em class="sig-param">r</em>, <em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.rt2tr" title="Permalink to this definition">¶</a></dt>
+<dd><p>RT2TR Convert rotation and translation to homogeneous transform</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> – rotation matrix</p></li>
+<li><p><strong>t</strong> – translation</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>homogeneous transform</p>
+</dd>
+</dl>
+<p>RT2TR(R, t) is a homogeneous transformation matrix (N+1xN+1) formed from an
+orthonormal rotation matrix R (NxN) and a translation vector t
+(Nx1).  Works for R in SO(2) or SO(3):
+- If R is 2x2 and t is 2x1, then TR is 3x3
+- If R is 3x3 and t is 3x1, then TR is 4x4</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.skew">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">skew</code><span class="sig-paren">(</span><em class="sig-param">v</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.skew" title="Permalink to this definition">¶</a></dt>
+<dd><p>SKEW creates Skew-symmetric metrix from vector</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>v</strong> – 1 or 3 vector</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>skew-symmetric matrix</p>
+</dd>
+</dl>
+<p>SKEW(V) is a skew-symmetric matrix formed from V.</p>
+<dl>
+<dt>If V (1x1) then S =</dt><dd><div class="line-block">
+<div class="line">0  -v |</div>
+<div class="line">v   0 |</div>
+</div>
+</dd>
+<dt>and if V (1x3) then S =</dt><dd><div class="line-block">
+<div class="line-block">
+<div class="line">0  -vz   vy |</div>
+</div>
+<div class="line">vz    0  -vx |</div>
+</div>
+<p><a href="#id1"><span class="problematic" id="id2">|</span></a>-vy   vx    0 |</p>
+</dd>
+</dl>
+<p>Notes::
+- This is the inverse of the function VEX().
+- These are the generator matrices for the Lie algebras so(2) and so(3).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.skewa">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">skewa</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.skewa" title="Permalink to this definition">¶</a></dt>
+<dd><p>SKEWA creates augmented skew-symmetric matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>s</strong> – 3 or 6 vector</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>augmented skew-symmetric matrix</p>
+</dd>
+</dl>
+<p>SKEWA(V) is an augmented skew-symmetric matrix formed from V.</p>
+<dl>
+<dt>If V (1x3) then S =</dt><dd><div class="line-block">
+<div class="line-block">
+<div class="line">0  -v3  v1 |</div>
+</div>
+<div class="line">v3    0  v2 |</div>
+<div class="line-block">
+<div class="line">0    0   0 |</div>
+</div>
+</div>
+</dd>
+<dt>and if V (1x6) then S =</dt><dd><div class="line-block">
+<div class="line-block">
+<div class="line">0  -v6   v5  v1 |</div>
+</div>
+<div class="line">v6    0  -v4  v2 |</div>
+</div>
+<p><a href="#id3"><span class="problematic" id="id4">|</span></a>-v5   v4    0  v3 |
+|  0    0    0   0 |</p>
+</dd>
+</dl>
+<p>Notes::
+- This is the inverse of the function VEXA().
+- These are the generator matrices for the Lie algebras se(2) and se(3).
+- Map twist vectors in 2D and 3D space to se(2) and se(3).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.t2r">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">t2r</code><span class="sig-paren">(</span><em class="sig-param">tmat</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.t2r" title="Permalink to this definition">¶</a></dt>
+<dd><p>R2T Convert homogeneous transform to a rotation matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tmat</strong> – homogeneous transform</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>rotation matrix</p>
+</dd>
+</dl>
+<p>T2R(tmat) is the orthonormal rotation matrix component of homogeneous
+transformation matrix tmat.  Works for T in SE(2) or SE(3)
+if tmat is 3x3 then return is 2x2, or
+if tmat is 4x4 then return is 3x3.</p>
+<p>Validity of rotational part is not checked</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.tr2angvec">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">tr2angvec</code><span class="sig-paren">(</span><em class="sig-param">tr</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.tr2angvec" title="Permalink to this definition">¶</a></dt>
+<dd><p>TR2ANGVEC Convert rotation matrix to angle-vector form
+:param tr: Rotation matrix
+:param unit: ‘rad’ or ‘deg’
+:return: Angle-vector form
+TR2ANGVEC(R, OPTIONS) is rotation expressed in terms of an angle THETA (1x1) about the axis V (1x3) equivalent to the orthonormal rotation matrix R (3x3).
+TR2ANGVEC(T, OPTIONS) as above but uses the rotational part of the homogeneous transform T (4x4).
+If R (3x3xK) or T (4x4xK) represent a sequence then THETA (Kx1)is a vector of angles for corresponding elements of the sequence and V (Kx3) are the corresponding axes, one per row.
+Options::
+‘deg’   Return angle in degrees
+Notes::
+- For an identity rotation matrix both THETA and V are set to zero.
+- The rotation angle is always in the interval [0 pi], negative rotation is handled by inverting the direction of the rotation axis.
+- If no output arguments are specified the result is displayed.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.tr2eul">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">tr2eul</code><span class="sig-paren">(</span><em class="sig-param">tr</em>, <em class="sig-param">unit='rad'</em>, <em class="sig-param">flip=False</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.tr2eul" title="Permalink to this definition">¶</a></dt>
+<dd><p>TR2EUL Convert homogeneous transform to Euler angles
+:param tr: Homogeneous transformation
+:param unit: ‘rad’ or ‘deg’
+:param flip: True or False
+:return: Euler angles
+TR2EUL(T, OPTIONS) are the ZYZ Euler angles (1x3) corresponding to the rotational part of a homogeneous transform T (4x4). The 3 angles EUL=[PHI,THETA,PSI] correspond to sequential rotations about the Z, Y and Z axes respectively.
+TR2EUL(R, OPTIONS) as above but the input is an orthonormal rotation matrix R (3x3).
+If R (3x3xK) or T (4x4xK) represent a sequence then each row of EUL corresponds to a step of the sequence.
+Options::
+‘deg’   Compute angles in degrees (radians default)
+‘flip’  Choose first Euler angle to be in quadrant 2 or 3.
+Notes::
+- There is a singularity for the case where THETA=0 in which case PHI is arbitrarily set to zero and PSI is the sum (PHI+PSI).
+- Translation component is ignored.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.tr2rpy">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">tr2rpy</code><span class="sig-paren">(</span><em class="sig-param">tr</em>, <em class="sig-param">unit='rad'</em>, <em class="sig-param">order='zyx'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.tr2rpy" title="Permalink to this definition">¶</a></dt>
+<dd><p>TR2RPY Convert a homogeneous transform to roll-pitch-yaw angles
+:param tr: Homogeneous transformation
+:param unit: ‘rad’ or ‘deg’
+:param order: ‘xyz’, ‘zyx’ or ‘yxz’
+:return: Roll-pitch-yaw angle
+TR2RPY(T, options) are the roll-pitch-yaw angles (1x3) corresponding to the rotation part of a homogeneous transform T. The 3 angles RPY=[R,P,Y] correspond to sequential rotations about the Z, Y and X axes respectively.
+TR2RPY(R, options) as above but the input is an orthonormal rotation matrix R (3x3).
+If R (3x3xK) or T (4x4xK) represent a sequence then each row of RPY corresponds to a step of the sequence.
+Options::
+‘deg’   Compute angles in degrees (radians default)
+‘xyz’   Return solution for sequential rotations about X, Y, Z axes
+‘yxz’   Return solution for sequential rotations about Y, X, Z axes
+Notes::
+- There is a singularity for the case where P=pi/2 in which case R is arbitrarily set to zero and Y is the sum (R+Y).
+- Translation component is ignored.
+- Toolbox rel 8-9 has the reverse default angle sequence as default</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.tr2rt">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">tr2rt</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.tr2rt" title="Permalink to this definition">¶</a></dt>
+<dd><p>TR2RT Convert homogeneous transform to rotation and translation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>t</strong> – homogeneous transform matrix</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Rotation and translation of the homogeneous transform</p>
+</dd>
+</dl>
+<p>TR2RT(TR) splits a homogeneous transformation matrix (NxN) into an orthonormal
+rotation matrix R (MxM) and a translation vector T (Mx1), where N=M+1.</p>
+<p>Works for TR in SE(2) or SE(3)
+- If TR is 4x4, then R is 3x3 and T is 3x1.
+- If TR is 3x3, then R is 2x2 and T is 2x1.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.transl">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">transl</code><span class="sig-paren">(</span><em class="sig-param">x=None</em>, <em class="sig-param">y=None</em>, <em class="sig-param">z=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.transl" title="Permalink to this definition">¶</a></dt>
+<dd><p>TRANSL Create or unpack an SE(3) translational homogeneous transform</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – translation along x axes, homogeneous transform or a list of translations</p></li>
+<li><p><strong>y</strong> – translation along y axes</p></li>
+<li><p><strong>z</strong> – translation along z axes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>homogeneous transform with pure translation</p>
+</dd>
+</dl>
+<p>Create a translational SE(3) matrix:</p>
+<p>T = TRANSL(X, Y, Z) is an SE(3) homogeneous transform (4x4) representing a
+pure translation of X, Y and Z.</p>
+<p>T = TRANSL(P) is an SE(3) homogeneous transform (4x4) representing a
+translation of P=[X,Y,Z]. If P (Mx3) it represents a sequence and T (4x4xM)
+is a sequence of homogeneous transforms such that T(:,:,i) corresponds to
+the i’th row of P.</p>
+<p>Extract the translational part of an SE(3) matrix:</p>
+<p>P = TRANSL(T) is the translational part of a homogeneous transform T as a
+3-element column vector.  If T (4x4xM) is a homogeneous transform sequence
+the rows of P (Mx3) are the translational component of the corresponding
+transform in the sequence.</p>
+<p>[X,Y,Z] = TRANSL(T) is the translational part of a homogeneous transform
+T as three components.  If T (4x4xM) is a homogeneous transform sequence
+then X,Y,Z (1xM) are the translational components of the corresponding
+transform in the sequence.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.transl2">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">transl2</code><span class="sig-paren">(</span><em class="sig-param">x=None</em>, <em class="sig-param">y=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.transl2" title="Permalink to this definition">¶</a></dt>
+<dd><p>TRANSL2 Create or unpack an SE(2) translational homogeneous transform</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – x translation, homogeneous transform or a list of translations</p></li>
+<li><p><strong>y</strong> – y translation</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>homogeneous transform matrix or the translation elements of a</p>
+</dd>
+</dl>
+<p>homogeneous transform</p>
+<p>Create a translational SE(2) matrix:</p>
+<p>T = TRANSL2(X, Y) is an SE(2) homogeneous transform (3x3) representing a
+pure translation.</p>
+<p>T = TRANSL2(P) is a homogeneous transform representing a translation or
+point P=[X,Y]. If P (Mx2) it represents a sequence and T (3x3xM) is a
+sequence of homogeneous transforms such that T(:,:,i) corresponds to the
+i’th row of P.</p>
+<p>Extract the translational part of an SE(2) matrix:</p>
+<p>P = TRANSL2(T) is the translational part of a homogeneous transform as a
+2-element column vector.  If T (3x3xM) is a homogeneous transform
+sequence the rows of P (Mx2) are the translational component of the
+corresponding transform in the sequence.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.trexp">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">trexp</code><span class="sig-paren">(</span><em class="sig-param">S</em>, <em class="sig-param">theta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.trexp" title="Permalink to this definition">¶</a></dt>
+<dd><p>TREXP matrix exponential for so(3) and se(3)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>S</strong> – SO(3), SE(3), unit vector or twist vector</p></li>
+<li><p><strong>theta</strong> – Rotation in radians</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>matrix exponential</p>
+</dd>
+</dl>
+<p>For so(3):</p>
+<p>TREXP(OMEGA) is the matrix exponential (3x3) of the so(3) element OMEGA that
+yields a rotation matrix (3x3).</p>
+<p>TREXP(OMEGA, THETA) as above, but so(3) motion of THETA*OMEGA.</p>
+<p>TREXP(S, THETA) as above, but rotation of THETA about the unit vector S.</p>
+<p>TREXP(W) as above, but the so(3) value is expressed as a vector W (1x3) where
+W = S * THETA. Rotation by ||W|| about the vector W.</p>
+<p>For se(3):</p>
+<p>TREXP(SIGMA) is the matrix exponential (4x4) of the se(3) element SIGMA that
+yields a homogeneous transformation  matrix (4x4).</p>
+<p>TREXP(TW) as above, but the se(3) value is expressed as a twist vector TW (1x6).</p>
+<p>TREXP(SIGMA, THETA) as above, but se(3) motion of SIGMA*THETA, the rotation
+part of SIGMA (4x4) must be unit norm.</p>
+<p>TREXP(TW, THETA) as above, but se(3) motion of TW*THETA, the rotation part
+of TW (1x6) must be unit norm.</p>
+<p>Notes::
+- Efficient closed-form solution of the matrix exponential for arguments
+that are so(3) or se(3).
+- If theta is given then the first argument must be a unit vector or a
+skew-symmetric matrix from a unit vector.
+- Angle vector argument order is different to ANGVEC2R.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.trexp2">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">trexp2</code><span class="sig-paren">(</span><em class="sig-param">S</em>, <em class="sig-param">theta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.trexp2" title="Permalink to this definition">¶</a></dt>
+<dd><p>TREXP2 matrix exponential for so(2) and se(2)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>S:S</strong> – SO(2), SE(2) or unit vector</p></li>
+<li><p><strong>theta</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>matrix exponential</p>
+</dd>
+</dl>
+<p>R = TREXP2(OMEGA) is the matrix exponential (2x2) of the so(2) element OMEGA that
+yields a rotation matrix (2x2).</p>
+<p>R = TREXP2(THETA) as above, but rotation by THETA (1x1).</p>
+<p>SE(2):</p>
+<p>T = TREXP2(SIGMA) is the matrix exponential (3x3) of the se(2) element
+SIGMA that yields a homogeneous transformation  matrix (3x3).</p>
+<p>T = TREXP2(TW) as above, but the se(2) value is expressed as a vector TW
+(1x3).</p>
+<p>T = TREXP2(SIGMA, THETA) as above, but se(2) rotation of SIGMA*THETA, the
+rotation part of SIGMA (3x3) must be unit norm.</p>
+<p>T = TREXP(TW, THETA) as above, but se(2) rotation of TW*THETA, the
+rotation part of TW must be unit norm.</p>
+<p>Notes::
+- Efficient closed-form solution of the matrix exponential for arguments that are</p>
+<blockquote>
+<div><p>so(2) or se(2).</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>If theta is given then the first argument must be a unit vector or a
+skew-symmetric matrix from a unit vector.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.trlog">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">trlog</code><span class="sig-paren">(</span><em class="sig-param">T</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.trlog" title="Permalink to this definition">¶</a></dt>
+<dd><p>TRLOG logarithm of SO(3) or SE(3) matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>T</strong> – SO(3) or SE(3) Matrix</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>[rotation, vector]</p>
+</dd>
+</dl>
+<p>[theta,w] = trlog(R) as above but returns directly theta the rotation angle and w
+(3x1) the unit-vector indicating the rotation axis.</p>
+<p>[theta,twist] = trlog(T) as above but returns directly theta the rotation angle
+and a twist vector (6x1) comprising [v w].</p>
+<p>Notes::
+- Efficient closed-form solution of the matrix logarithm for arguments that are
+SO(3) or SE(3).
+- Special cases of rotation by odd multiples of pi are handled.
+- Angle is always in the interval [0,pi].</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.trot2">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">trot2</code><span class="sig-paren">(</span><em class="sig-param">theta</em>, <em class="sig-param">unit='rad'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.trot2" title="Permalink to this definition">¶</a></dt>
+<dd><p>TROT2 SE2 rotation matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>theta</strong> – rotation in radians or degrees</p></li>
+<li><p><strong>unit</strong> – “rad” or “deg” to indicate unit being used</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>homogeneous transform matrix (3x3)</p>
+</dd>
+</dl>
+<p>TROT2(THETA) is a homogeneous transformation (3x3) representing a rotation of
+THETA radians.
+TROT2(THETA, ‘deg’) as above but THETA is in degrees.
+Notes::
+- Translational component is zero.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.trotx">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">trotx</code><span class="sig-paren">(</span><em class="sig-param">theta, unit='rad', xyz=[0, 0, 0]</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.trotx" title="Permalink to this definition">¶</a></dt>
+<dd><p>TROTX Rotation about X axis</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>theta</strong> – rotation in radians or degrees</p></li>
+<li><p><strong>unit</strong> – “rad” or “deg” to indicate unit being used</p></li>
+<li><p><strong>xyz</strong> – the xyz translation, if blank defaults to [0,0,0]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>homogeneous transform matrix</p>
+</dd>
+</dl>
+<p>trotx(THETA) is a homogeneous transformation (4x4) representing a rotation
+of THETA radians about the x-axis.
+trotx(THETA, ‘deg’) as above but THETA is in degrees
+trotx(THETA, ‘rad’, [x,y,z]) as above with translation of [x,y,z]</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.troty">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">troty</code><span class="sig-paren">(</span><em class="sig-param">theta, unit='rad', xyz=[0, 0, 0]</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.troty" title="Permalink to this definition">¶</a></dt>
+<dd><p>TROTY Rotation about Y axis</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>theta</strong> – rotation in radians or degrees</p></li>
+<li><p><strong>unit</strong> – “rad” or “deg” to indicate unit being used</p></li>
+<li><p><strong>xyz</strong> – the xyz translation, if blank defaults to [0,0,0]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>homogeneous transform matrix</p>
+</dd>
+</dl>
+<p>troty(THETA) is a homogeneous transformation (4x4) representing a rotation
+of THETA radians about the y-axis.
+troty(THETA, ‘deg’) as above but THETA is in degrees
+troty(THETA, ‘rad’, [x,y,z]) as above with translation of [x,y,z]</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.trotz">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">trotz</code><span class="sig-paren">(</span><em class="sig-param">theta, unit='rad', xyz=[0, 0, 0]</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.trotz" title="Permalink to this definition">¶</a></dt>
+<dd><p>TROTZ Rotation about Z axis</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>theta</strong> – rotation in radians or degrees</p></li>
+<li><p><strong>unit</strong> – “rad” or “deg” to indicate unit being used</p></li>
+<li><p><strong>xyz</strong> – the xyz translation, if blank defaults to [0,0,0]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>homogeneous transform matrix</p>
+</dd>
+</dl>
+<p>trotz(THETA) is a homogeneous transformation (4x4) representing a rotation
+of THETA radians about the z-axis.
+trotz(THETA, ‘deg’) as above but THETA is in degrees
+trotz(THETA, ‘rad’, [x,y,z]) as above with translation of [x,y,z]</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.unitize">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">unitize</code><span class="sig-paren">(</span><em class="sig-param">v</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.unitize" title="Permalink to this definition">¶</a></dt>
+<dd><p>UNIT Unitize a vector</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>v</strong> – given unit vector</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a unit-vector parallel to V.</p>
+</dd>
+</dl>
+<p>Reports error for the case where V is non-symbolic and norm(V) is zero</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.transforms.vex">
+<code class="sig-prename descclassname">robopy.base.transforms.</code><code class="sig-name descname">vex</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.transforms.vex" title="Permalink to this definition">¶</a></dt>
+<dd><p>VEX Convert skew-symmetric matrix to vector</p>
+<p>:param s:skew-symmetric matrix
+:return: vector</p>
+<p>VEX(S) is the vector which has the corresponding skew-symmetric matrix S.
+In the case that S (2x2) then V is 1x1</p>
+<blockquote>
+<div><dl>
+<dt>S = | 0  -v |</dt><dd><div class="line-block">
+<div class="line">v   0 |</div>
+</div>
+</dd>
+</dl>
+</div></blockquote>
+<dl>
+<dt>In the case that S (3x3) then V is 3x1.</dt><dd><blockquote>
+<div><div class="line-block">
+<div class="line">0  -vz   vy |</div>
+</div>
+</div></blockquote>
+<dl class="simple">
+<dt>S = | vz    0  -vx |</dt><dd><p><a href="#id5"><span class="problematic" id="id6">|</span></a>-vy   vx    0 |</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Notes::
+- This is the inverse of the function SKEW().
+- Only rudimentary checking (zero diagonal) is done to ensure that the matrix
+is actually skew-symmetric.
+- The function takes the mean of the two elements that correspond to each unique
+element of the matrix.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-robopy.base.util">
+<span id="robopy-base-util-module"></span><h2>robopy.base.util module<a class="headerlink" href="#module-robopy.base.util" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="robopy.base.util.ctraj">
+<code class="sig-prename descclassname">robopy.base.util.</code><code class="sig-name descname">ctraj</code><span class="sig-paren">(</span><em class="sig-param">T0</em>, <em class="sig-param">T1</em>, <em class="sig-param">N</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.util.ctraj" title="Permalink to this definition">¶</a></dt>
+<dd><p>CTRAJ(T0, T1, N) is a Cartesian trajectory (4x4xN) from pose T0 to T1
+with N points that follow a trapezoidal velocity profile along the path.
+:param T0: Start pose
+:param T1: End pose
+:param N: number of points to be interpolated
+:return: SE3 pose</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="robopy.base.util.lspb">
+<code class="sig-prename descclassname">robopy.base.util.</code><code class="sig-name descname">lspb</code><span class="sig-paren">(</span><em class="sig-param">q0</em>, <em class="sig-param">q1</em>, <em class="sig-param">t</em>, <em class="sig-param">V=None</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.base.util.lspb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-robopy.base">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-robopy.base" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">RoboPy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">robopy</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="robopy.html">robopy package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">robopy</a><ul>
+  <li><a href="robopy.html">robopy package</a><ul>
+      <li>Previous: <a href="robopy.html" title="previous chapter">robopy package</a></li>
+      <li>Next: <a href="robopy.tests.html" title="next chapter">robopy.tests package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, RShom.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/robopy.base.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

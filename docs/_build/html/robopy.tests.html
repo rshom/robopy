@@ -1,0 +1,1328 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>robopy.tests package &#8212; RoboPy 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="robopy.base package" href="robopy.base.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="robopy-tests-package">
+<h1>robopy.tests package<a class="headerlink" href="#robopy-tests-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-robopy.tests.test_common">
+<span id="robopy-tests-test-common-module"></span><h2>robopy.tests.test_common module<a class="headerlink" href="#module-robopy.tests.test_common" title="Permalink to this headline">¶</a></h2>
+<p>This module contains all common helpful methods used in testing toolbox functionality</p>
+<dl class="function">
+<dt id="robopy.tests.test_common.matrices_equal">
+<code class="sig-prename descclassname">robopy.tests.test_common.</code><code class="sig-name descname">matrices_equal</code><span class="sig-paren">(</span><em class="sig-param">rec_mat</em>, <em class="sig-param">exp_mat</em>, <em class="sig-param">decimal=10</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_common.matrices_equal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="robopy.tests.test_common.matrix_mismatch_string_builder">
+<code class="sig-prename descclassname">robopy.tests.test_common.</code><code class="sig-name descname">matrix_mismatch_string_builder</code><span class="sig-paren">(</span><em class="sig-param">rec_mat</em>, <em class="sig-param">exp_mat</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_common.matrix_mismatch_string_builder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-robopy.tests.test_pose">
+<span id="robopy-tests-test-pose-module"></span><h2>robopy.tests.test_pose module<a class="headerlink" href="#module-robopy.tests.test_pose" title="Permalink to this headline">¶</a></h2>
+<p>Test module for poses: SO2, SE2, SO3 and SE3</p>
+<dl class="class">
+<dt id="robopy.tests.test_pose.TestSE2">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_pose.</code><code class="sig-name descname">TestSE2</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSE2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSE2.test_pose_se2_constructor_no_args">
+<code class="sig-name descname">test_pose_se2_constructor_no_args</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSE2.test_pose_se2_constructor_no_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_pose.TestSE3">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_pose.</code><code class="sig-name descname">TestSE3</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSE3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSE3.test_pose_se3_constructor_no_args">
+<code class="sig-name descname">test_pose_se3_constructor_no_args</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSE3.test_pose_se3_constructor_no_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_pose.TestSO3">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_pose.</code><code class="sig-name descname">TestSO3</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_angvec">
+<code class="sig-name descname">test_pose_so3_constructor_angvec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_angvec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_eul">
+<code class="sig-name descname">test_pose_so3_constructor_eul</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_eul" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_no_args">
+<code class="sig-name descname">test_pose_so3_constructor_no_args</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_no_args" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_oa">
+<code class="sig-name descname">test_pose_so3_constructor_oa</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_oa" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rand">
+<code class="sig-name descname">test_pose_so3_constructor_rand</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rand" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rot_matrix">
+<code class="sig-name descname">test_pose_so3_constructor_rot_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rot_matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rot_matrix_list">
+<code class="sig-name descname">test_pose_so3_constructor_rot_matrix_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rot_matrix_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rpy">
+<code class="sig-name descname">test_pose_so3_constructor_rpy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rpy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rpy_list">
+<code class="sig-name descname">test_pose_so3_constructor_rpy_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rpy_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rx">
+<code class="sig-name descname">test_pose_so3_constructor_rx</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rx_list">
+<code class="sig-name descname">test_pose_so3_constructor_rx_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rx_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_ry">
+<code class="sig-name descname">test_pose_so3_constructor_ry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_ry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_ry_list">
+<code class="sig-name descname">test_pose_so3_constructor_ry_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_ry_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rz">
+<code class="sig-name descname">test_pose_so3_constructor_rz</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rz" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rz_list">
+<code class="sig-name descname">test_pose_so3_constructor_rz_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_rz_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_se3_data">
+<code class="sig-name descname">test_pose_so3_constructor_se3_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_se3_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_se3_length">
+<code class="sig-name descname">test_pose_so3_constructor_se3_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_se3_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_se3_list">
+<code class="sig-name descname">test_pose_so3_constructor_se3_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_se3_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_so3_list">
+<code class="sig-name descname">test_pose_so3_constructor_so3_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_so3_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_so3_object_data">
+<code class="sig-name descname">test_pose_so3_constructor_so3_object_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_so3_object_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_so3_object_length">
+<code class="sig-name descname">test_pose_so3_constructor_so3_object_length</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_constructor_so3_object_length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_det">
+<code class="sig-name descname">test_pose_so3_det</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_det" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_eig">
+<code class="sig-name descname">test_pose_so3_eig</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_eig" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_interp">
+<code class="sig-name descname">test_pose_so3_interp</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_interp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_inv">
+<code class="sig-name descname">test_pose_so3_inv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_inv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_log">
+<code class="sig-name descname">test_pose_so3_log</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_log" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_property_isSE">
+<code class="sig-name descname">test_pose_so3_property_isSE</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_property_isSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_property_isSym">
+<code class="sig-name descname">test_pose_so3_property_isSym</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_property_isSym" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_property_zero">
+<code class="sig-name descname">test_pose_so3_property_zero</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_property_zero" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_rotation">
+<code class="sig-name descname">test_pose_so3_rotation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_rotation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_rotation_list">
+<code class="sig-name descname">test_pose_so3_rotation_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_rotation_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_simplify">
+<code class="sig-name descname">test_pose_so3_simplify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_simplify" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_static_check">
+<code class="sig-name descname">test_pose_so3_static_check</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_static_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_static_rpy">
+<code class="sig-name descname">test_pose_so3_static_rpy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_static_rpy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_static_rx">
+<code class="sig-name descname">test_pose_so3_static_rx</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_static_rx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_static_ry">
+<code class="sig-name descname">test_pose_so3_static_ry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_static_ry" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_static_rz">
+<code class="sig-name descname">test_pose_so3_static_rz</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_static_rz" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_pose.TestSO3.test_pose_so3_tr_matrix">
+<code class="sig-name descname">test_pose_so3_tr_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_pose.TestSO3.test_pose_so3_tr_matrix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-robopy.tests.test_transforms">
+<span id="robopy-tests-test-transforms-module"></span><h2>robopy.tests.test_transforms module<a class="headerlink" href="#module-robopy.tests.test_transforms" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="robopy.tests.test_transforms.TestOa2tr">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">TestOa2tr</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestOa2tr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestOa2tr.test_transforms_oa2tr_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_oa2tr_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestOa2tr.test_transforms_oa2tr_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.TestR2t">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">TestR2t</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestR2t" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestR2t.test_transforms_r2t_validData_boundaryCondition_0_rad">
+<code class="sig-name descname">test_transforms_r2t_validData_boundaryCondition_0_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestR2t.test_transforms_r2t_validData_boundaryCondition_0_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestR2t.test_transforms_r2t_validData_boundaryCondition_pi_by2_rad">
+<code class="sig-name descname">test_transforms_r2t_validData_boundaryCondition_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestR2t.test_transforms_r2t_validData_boundaryCondition_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestR2t.test_transforms_r2t_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_r2t_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestR2t.test_transforms_r2t_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestR2t.test_transforms_r2t_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_r2t_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestR2t.test_transforms_r2t_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.TestRotx">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">TestRotx</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_invalidData_arg1_string">
+<code class="sig-name descname">test_transforms_3d_rotx_invalidData_arg1_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_invalidData_arg1_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_invalidData_arg2_bool">
+<code class="sig-name descname">test_transforms_3d_rotx_invalidData_arg2_bool</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_invalidData_arg2_bool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_invalidData_arg2_int">
+<code class="sig-name descname">test_transforms_3d_rotx_invalidData_arg2_int</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_invalidData_arg2_int" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_invalidData_arg2_string_mismatch">
+<code class="sig-name descname">test_transforms_3d_rotx_invalidData_arg2_string_mismatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_invalidData_arg2_string_mismatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_0_deg">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_boundaryCondition_0_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_0_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_0_rad">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_boundaryCondition_0_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_0_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_180_deg">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_boundaryCondition_180_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_180_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_270_deg">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_boundaryCondition_270_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_270_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_2pi_rad">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_boundaryCondition_2pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_2pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_360_deg">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_boundaryCondition_360_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_360_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_450_deg">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_boundaryCondition_450_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_450_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_90_deg">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_boundaryCondition_90_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_90_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_boundaryCondition_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_pi_rad">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_boundaryCondition_pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_three_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_boundaryCondition_three_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_boundaryCondition_three_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_3d_rotx_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestRotx.test_transforms_3d_rotx_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.TestSkew">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">TestSkew</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_1">
+<code class="sig-name descname">test_transforms_dif_skew_validData_boundaryCondition_1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_100">
+<code class="sig-name descname">test_transforms_dif_skew_validData_boundaryCondition_100</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_100" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_101">
+<code class="sig-name descname">test_transforms_dif_skew_validData_boundaryCondition_101</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_101" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_111">
+<code class="sig-name descname">test_transforms_dif_skew_validData_boundaryCondition_111</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_111" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_2">
+<code class="sig-name descname">test_transforms_dif_skew_validData_boundaryCondition_2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_3">
+<code class="sig-name descname">test_transforms_dif_skew_validData_boundaryCondition_3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_321">
+<code class="sig-name descname">test_transforms_dif_skew_validData_boundaryCondition_321</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_321" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_4">
+<code class="sig-name descname">test_transforms_dif_skew_validData_boundaryCondition_4</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_5">
+<code class="sig-name descname">test_transforms_dif_skew_validData_boundaryCondition_5</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_boundaryCondition_5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_dif_skew_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_returnData_dimension_v3">
+<code class="sig-name descname">test_transforms_dif_skew_validData_returnData_dimension_v3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_returnData_dimension_v3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_dif_skew_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_returnDatatype_v3">
+<code class="sig-name descname">test_transforms_dif_skew_validData_returnDatatype_v3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkew.test_transforms_dif_skew_validData_returnDatatype_v3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.TestSkewa">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">TestSkewa</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skew_validData_returnData_dimension_v3">
+<code class="sig-name descname">test_transforms_dif_skew_validData_returnData_dimension_v3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skew_validData_returnData_dimension_v3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_1">
+<code class="sig-name descname">test_transforms_dif_skewa_validData_boundaryCondition_1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_100">
+<code class="sig-name descname">test_transforms_dif_skewa_validData_boundaryCondition_100</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_100" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_101">
+<code class="sig-name descname">test_transforms_dif_skewa_validData_boundaryCondition_101</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_101" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_111">
+<code class="sig-name descname">test_transforms_dif_skewa_validData_boundaryCondition_111</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_111" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_123">
+<code class="sig-name descname">test_transforms_dif_skewa_validData_boundaryCondition_123</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_123" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_2">
+<code class="sig-name descname">test_transforms_dif_skewa_validData_boundaryCondition_2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_2_4x4">
+<code class="sig-name descname">test_transforms_dif_skewa_validData_boundaryCondition_2_4x4</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_2_4x4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_321">
+<code class="sig-name descname">test_transforms_dif_skewa_validData_boundaryCondition_321</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_boundaryCondition_321" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_dif_skewa_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_dif_skewa_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_returnDatatype_v3">
+<code class="sig-name descname">test_transforms_dif_skewa_validData_returnDatatype_v3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestSkewa.test_transforms_dif_skewa_validData_returnDatatype_v3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.TestT2r">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">TestT2r</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestT2r" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestT2r.test_transforms_t2r_validData_boundaryCondition_0_rad">
+<code class="sig-name descname">test_transforms_t2r_validData_boundaryCondition_0_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestT2r.test_transforms_t2r_validData_boundaryCondition_0_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestT2r.test_transforms_t2r_validData_boundaryCondition_pi_by2_rad">
+<code class="sig-name descname">test_transforms_t2r_validData_boundaryCondition_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestT2r.test_transforms_t2r_validData_boundaryCondition_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestT2r.test_transforms_t2r_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_t2r_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestT2r.test_transforms_t2r_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestT2r.test_transforms_t2r_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_t2r_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestT2r.test_transforms_t2r_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.TestVex">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">TestVex</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestVex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestVex.test_transforms_dif_vex_validData_boundaryCondition_rot_0">
+<code class="sig-name descname">test_transforms_dif_vex_validData_boundaryCondition_rot_0</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestVex.test_transforms_dif_vex_validData_boundaryCondition_rot_0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestVex.test_transforms_dif_vex_validData_returnData_dimension1">
+<code class="sig-name descname">test_transforms_dif_vex_validData_returnData_dimension1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestVex.test_transforms_dif_vex_validData_returnData_dimension1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestVex.test_transforms_dif_vex_validData_returnData_dimension2">
+<code class="sig-name descname">test_transforms_dif_vex_validData_returnData_dimension2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestVex.test_transforms_dif_vex_validData_returnData_dimension2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestVex.test_transforms_dif_vex_validData_returnDatatype1">
+<code class="sig-name descname">test_transforms_dif_vex_validData_returnDatatype1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestVex.test_transforms_dif_vex_validData_returnDatatype1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.TestVex.test_transforms_dif_vex_validData_returnDatatype2">
+<code class="sig-name descname">test_transforms_dif_vex_validData_returnDatatype2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.TestVex.test_transforms_dif_vex_validData_returnDatatype2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.Testrot2">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">Testrot2</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_invalidData_arg1_string">
+<code class="sig-name descname">test_transforms_2d_rot2_invalidData_arg1_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_invalidData_arg1_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_invalidData_arg2_bool">
+<code class="sig-name descname">test_transforms_2d_rot2_invalidData_arg2_bool</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_invalidData_arg2_bool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_invalidData_arg2_int">
+<code class="sig-name descname">test_transforms_2d_rot2_invalidData_arg2_int</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_invalidData_arg2_int" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_invalidData_arg2_string_mismatch">
+<code class="sig-name descname">test_transforms_2d_rot2_invalidData_arg2_string_mismatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_invalidData_arg2_string_mismatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_0_deg">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_boundaryCondition_0_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_0_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_0_rad">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_boundaryCondition_0_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_0_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_180_deg">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_boundaryCondition_180_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_180_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_270_deg">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_boundaryCondition_270_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_270_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_2pi_rad">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_boundaryCondition_2pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_2pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_360_deg">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_boundaryCondition_360_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_360_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_450_deg">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_boundaryCondition_450_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_450_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_90_deg">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_boundaryCondition_90_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_90_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_pi_by2_rad">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_boundaryCondition_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_pi_rad">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_boundaryCondition_pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_three_pi_by2_rad">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_boundaryCondition_three_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_boundaryCondition_three_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_2d_rot2_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrot2.test_transforms_2d_rot2_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.Testroty">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">Testroty</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_invalidData_arg1_string">
+<code class="sig-name descname">test_transforms_3d_roty_invalidData_arg1_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_invalidData_arg1_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_invalidData_arg2_bool">
+<code class="sig-name descname">test_transforms_3d_roty_invalidData_arg2_bool</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_invalidData_arg2_bool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_invalidData_arg2_int">
+<code class="sig-name descname">test_transforms_3d_roty_invalidData_arg2_int</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_invalidData_arg2_int" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_invalidData_arg2_string_mismatch">
+<code class="sig-name descname">test_transforms_3d_roty_invalidData_arg2_string_mismatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_invalidData_arg2_string_mismatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_0_deg">
+<code class="sig-name descname">test_transforms_3d_roty_validData_boundaryCondition_0_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_0_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_0_rad">
+<code class="sig-name descname">test_transforms_3d_roty_validData_boundaryCondition_0_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_0_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_180_deg">
+<code class="sig-name descname">test_transforms_3d_roty_validData_boundaryCondition_180_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_180_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_270_deg">
+<code class="sig-name descname">test_transforms_3d_roty_validData_boundaryCondition_270_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_270_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_2pi_rad">
+<code class="sig-name descname">test_transforms_3d_roty_validData_boundaryCondition_2pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_2pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_360_deg">
+<code class="sig-name descname">test_transforms_3d_roty_validData_boundaryCondition_360_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_360_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_450_deg">
+<code class="sig-name descname">test_transforms_3d_roty_validData_boundaryCondition_450_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_450_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_90_deg">
+<code class="sig-name descname">test_transforms_3d_roty_validData_boundaryCondition_90_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_90_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_roty_validData_boundaryCondition_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_pi_rad">
+<code class="sig-name descname">test_transforms_3d_roty_validData_boundaryCondition_pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_three_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_roty_validData_boundaryCondition_three_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_boundaryCondition_three_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_3d_roty_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_3d_roty_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testroty.test_transforms_3d_roty_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.Testrotz">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">Testrotz</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_invalidData_arg1_string">
+<code class="sig-name descname">test_transforms_3d_rotz_invalidData_arg1_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_invalidData_arg1_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_invalidData_arg2_bool">
+<code class="sig-name descname">test_transforms_3d_rotz_invalidData_arg2_bool</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_invalidData_arg2_bool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_invalidData_arg2_int">
+<code class="sig-name descname">test_transforms_3d_rotz_invalidData_arg2_int</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_invalidData_arg2_int" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_invalidData_arg2_string_mismatch">
+<code class="sig-name descname">test_transforms_3d_rotz_invalidData_arg2_string_mismatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_invalidData_arg2_string_mismatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_0_deg">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_boundaryCondition_0_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_0_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_0_rad">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_boundaryCondition_0_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_0_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_180_deg">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_boundaryCondition_180_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_180_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_270_deg">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_boundaryCondition_270_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_270_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_2pi_rad">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_boundaryCondition_2pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_2pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_360_deg">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_boundaryCondition_360_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_360_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_450_deg">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_boundaryCondition_450_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_450_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_90_deg">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_boundaryCondition_90_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_90_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_boundaryCondition_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_pi_rad">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_boundaryCondition_pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_three_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_boundaryCondition_three_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_boundaryCondition_three_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_3d_rotz_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testrotz.test_transforms_3d_rotz_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.Testtrexp2">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">Testtrexp2</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrexp2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrexp2.test_transforms_2d_trexp2_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_2d_trexp2_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrexp2.test_transforms_2d_trexp2_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.Testtrot2">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">Testtrot2</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_invalidData_arg1_string">
+<code class="sig-name descname">test_transforms_2d_trot2_invalidData_arg1_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_invalidData_arg1_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_invalidData_arg2_bool">
+<code class="sig-name descname">test_transforms_2d_trot2_invalidData_arg2_bool</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_invalidData_arg2_bool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_invalidData_arg2_int">
+<code class="sig-name descname">test_transforms_2d_trot2_invalidData_arg2_int</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_invalidData_arg2_int" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_invalidData_arg2_string_mismatch">
+<code class="sig-name descname">test_transforms_2d_trot2_invalidData_arg2_string_mismatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_invalidData_arg2_string_mismatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_0_deg">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_boundaryCondition_0_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_0_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_0_rad">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_boundaryCondition_0_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_0_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_180_deg">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_boundaryCondition_180_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_180_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_270_deg">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_boundaryCondition_270_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_270_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_2pi_rad">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_boundaryCondition_2pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_2pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_360_deg">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_boundaryCondition_360_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_360_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_450_deg">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_boundaryCondition_450_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_450_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_90_deg">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_boundaryCondition_90_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_90_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_pi_by2_rad">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_boundaryCondition_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_pi_rad">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_boundaryCondition_pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_three_pi_by2_rad">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_boundaryCondition_three_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_boundaryCondition_three_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_2d_trot2_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrot2.test_transforms_2d_trot2_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.Testtrotx">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">Testtrotx</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_invalidData_arg1_string">
+<code class="sig-name descname">test_transforms_3d_trotx_invalidData_arg1_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_invalidData_arg1_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_invalidData_arg2_bool">
+<code class="sig-name descname">test_transforms_3d_trotx_invalidData_arg2_bool</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_invalidData_arg2_bool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_invalidData_arg2_int">
+<code class="sig-name descname">test_transforms_3d_trotx_invalidData_arg2_int</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_invalidData_arg2_int" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_invalidData_arg2_string_mismatch">
+<code class="sig-name descname">test_transforms_3d_trotx_invalidData_arg2_string_mismatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_invalidData_arg2_string_mismatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_0_deg">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_boundaryCondition_0_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_0_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_0_rad">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_boundaryCondition_0_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_0_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_180_deg">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_boundaryCondition_180_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_180_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_270_deg">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_boundaryCondition_270_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_270_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_2pi_rad">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_boundaryCondition_2pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_2pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_360_deg">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_boundaryCondition_360_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_360_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_450_deg">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_boundaryCondition_450_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_450_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_90_deg">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_boundaryCondition_90_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_90_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_boundaryCondition_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_pi_rad">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_boundaryCondition_pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_three_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_boundaryCondition_three_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_boundaryCondition_three_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_3d_trotx_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotx.test_transforms_3d_trotx_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.Testtroty">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">Testtroty</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_invalidData_arg1_string">
+<code class="sig-name descname">test_transforms_3d_troty_invalidData_arg1_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_invalidData_arg1_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_invalidData_arg2_bool">
+<code class="sig-name descname">test_transforms_3d_troty_invalidData_arg2_bool</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_invalidData_arg2_bool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_invalidData_arg2_int">
+<code class="sig-name descname">test_transforms_3d_troty_invalidData_arg2_int</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_invalidData_arg2_int" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_invalidData_arg2_string_mismatch">
+<code class="sig-name descname">test_transforms_3d_troty_invalidData_arg2_string_mismatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_invalidData_arg2_string_mismatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_0_deg">
+<code class="sig-name descname">test_transforms_3d_troty_validData_boundaryCondition_0_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_0_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_0_rad">
+<code class="sig-name descname">test_transforms_3d_troty_validData_boundaryCondition_0_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_0_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_180_deg">
+<code class="sig-name descname">test_transforms_3d_troty_validData_boundaryCondition_180_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_180_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_270_deg">
+<code class="sig-name descname">test_transforms_3d_troty_validData_boundaryCondition_270_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_270_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_2pi_rad">
+<code class="sig-name descname">test_transforms_3d_troty_validData_boundaryCondition_2pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_2pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_360_deg">
+<code class="sig-name descname">test_transforms_3d_troty_validData_boundaryCondition_360_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_360_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_450_deg">
+<code class="sig-name descname">test_transforms_3d_troty_validData_boundaryCondition_450_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_450_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_90_deg">
+<code class="sig-name descname">test_transforms_3d_troty_validData_boundaryCondition_90_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_90_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_troty_validData_boundaryCondition_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_pi_rad">
+<code class="sig-name descname">test_transforms_3d_troty_validData_boundaryCondition_pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_three_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_troty_validData_boundaryCondition_three_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_boundaryCondition_three_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_3d_troty_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_3d_troty_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtroty.test_transforms_3d_troty_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="robopy.tests.test_transforms.Testtrotz">
+<em class="property">class </em><code class="sig-prename descclassname">robopy.tests.test_transforms.</code><code class="sig-name descname">Testtrotz</code><span class="sig-paren">(</span><em class="sig-param">methodName='runTest'</em><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_invalidData_arg1_string">
+<code class="sig-name descname">test_transforms_3d_trotz_invalidData_arg1_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_invalidData_arg1_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_invalidData_arg2_bool">
+<code class="sig-name descname">test_transforms_3d_trotz_invalidData_arg2_bool</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_invalidData_arg2_bool" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_invalidData_arg2_int">
+<code class="sig-name descname">test_transforms_3d_trotz_invalidData_arg2_int</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_invalidData_arg2_int" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_invalidData_arg2_string_mismatch">
+<code class="sig-name descname">test_transforms_3d_trotz_invalidData_arg2_string_mismatch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_invalidData_arg2_string_mismatch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_0_deg">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_boundaryCondition_0_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_0_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_0_rad">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_boundaryCondition_0_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_0_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_180_deg">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_boundaryCondition_180_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_180_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_270_deg">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_boundaryCondition_270_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_270_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_2pi_rad">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_boundaryCondition_2pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_2pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_360_deg">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_boundaryCondition_360_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_360_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_450_deg">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_boundaryCondition_450_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_450_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_90_deg">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_boundaryCondition_90_deg</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_90_deg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_boundaryCondition_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_pi_rad">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_boundaryCondition_pi_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_pi_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_three_pi_by2_rad">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_boundaryCondition_three_pi_by2_rad</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_boundaryCondition_three_pi_by2_rad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_returnData_dimension">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_returnData_dimension</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_returnData_dimension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_returnDatatype">
+<code class="sig-name descname">test_transforms_3d_trotz_validData_returnDatatype</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#robopy.tests.test_transforms.Testtrotz.test_transforms_3d_trotz_validData_returnDatatype" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-robopy.tests">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-robopy.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">RoboPy</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">robopy</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="robopy.html">robopy package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">robopy</a><ul>
+  <li><a href="robopy.html">robopy package</a><ul>
+      <li>Previous: <a href="robopy.base.html" title="previous chapter">robopy.base package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, RShom.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/robopy.tests.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
